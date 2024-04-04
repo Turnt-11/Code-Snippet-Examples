@@ -1,0 +1,24 @@
+class User extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      first_name: “John”,
+      last_name: “Smith”,
+      department: “operations”
+    };
+  }
+  updateUserDepartment = () = >{
+    this.setState({
+      department: “IT”
+    });
+  }
+  render() {
+    return { < div > <p > First Name: {
+        user.first_name
+      } < /p> <p> User Department: {user.department} </p > <button type = ”button”onClick = {
+        this.updateUserDepartment
+      } > Change Department to IT < /button> </div >
+    };
+  }
+}
+ReactDOM.render( < User / >, document.getElementById(‘userDisplay’));
