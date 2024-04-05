@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Powershell Commands</h2>
+        <table>
+            <tr>
+              <th>Command</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Get-Help &lt;cmd&gt;</td>
+              <td>Displays detailed help information about PowerShell commands (&lt;cmd&gt;). Use -Examples for practical examples.</td>
+            </tr>
+            <tr>
+              <td>Get-Command</td>
+              <td>Lists all commands available in PowerShell, including cmdlets, functions, and aliases.</td>
+            </tr>
+            <tr>
+              <td>Get-ChildItem</td>
+              <td>Lists items in the current directory. Equivalent to ls or dir in other shells.</td>
+            </tr>
+            <tr>
+              <td>Set-Location &lt;path&gt;</td>
+              <td>Changes the current directory to &lt;path&gt;. Equivalent to cd in other shells.</td>
+            </tr>
+            <tr>
+              <td>New-Item &lt;path&gt; -ItemType File</td>
+              <td>Creates a new file at the specified path.</td>
+            </tr>
+            <tr>
+              <td>New-Item &lt;path&gt; -ItemType Directory</td>
+              <td>Creates a new directory at the specified path.</td>
+            </tr>
+            <tr>
+              <td>Copy-Item &lt;source&gt; &lt;destination&gt;</td>
+              <td>Copies a file or directory from &lt;source&gt; to &lt;destination&gt;.</td>
+            </tr>
+            <tr>
+              <td>Move-Item &lt;source&gt; &lt;destination&gt;</td>
+              <td>Moves a file or directory from &lt;source&gt; to &lt;destination&gt;.</td>
+            </tr>
+            <tr>
+              <td>Remove-Item &lt;path&gt;</td>
+              <td>Deletes a file or directory at the specified &lt;path&gt;.</td>
+            </tr>
+            <tr>
+              <td>Get-Content &lt;file&gt;</td>
+              <td>Displays the content of a file. Similar to cat in Unix/Linux.</td>
+            </tr>
+            <tr>
+              <td>Set-Content &lt;file&gt; -Value &lt;content&gt;</td>
+              <td>Writes or replaces the content in a file with &lt;content&gt;.</td>
+            </tr>
+            <tr>
+              <td>Add-Content &lt;file&gt; -Value &lt;content&gt;</td>
+              <td>Appends &lt;content&gt; to the end of a file.</td>
+            </tr>
+            <tr>
+              <td>Select-String &lt;pattern&gt; &lt;file&gt;</td>
+              <td>Searches for a &lt;pattern&gt; in a file. Similar to grep in Unix/Linux.</td>
+            </tr>
+            <tr>
+              <td>Get-Process</td>
+              <td>Lists running processes. Use -Name &lt;name&gt; to filter by process name.</td>
+            </tr>
+            <tr>
+              <td>Stop-Process -Name &lt;name&gt;</td>
+              <td>Stops a process by name. Can also use -Id &lt;id&gt; to stop by process ID.</td>
+            </tr>
+            <tr>
+              <td>Get-Service</td>
+              <td>Lists all system services. Use -Name &lt;name&gt; to filter by service name.</td>
+            </tr>
+            <tr>
+              <td>Start-Service -Name &lt;name&gt;</td>
+              <td>Starts a service by name.</td>
+            </tr>
+            <tr>
+              <td>Stop-Service -Name &lt;name&gt;</td>
+              <td>Stops a service by name.</td>
+            </tr>
+            <tr>
+              <td>Get-EventLog -LogName &lt;logName&gt;</td>
+              <td>Retrieves events from a specified log. For example, use System or Application for &lt;logName&gt;.</td>
+            </tr>
+            <tr>
+              <td>Get-SystemInfo</td>
+              <td>Displays detailed system information.</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+  
