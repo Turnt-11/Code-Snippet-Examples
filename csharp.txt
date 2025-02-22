@@ -1,0 +1,217 @@
+**C# Learning Guide**
+
+# **Introduction to C#**
+C# (pronounced "C-sharp") is a modern, object-oriented programming language developed by Microsoft. It is widely used for:
+- Web development (ASP.NET)
+- Desktop applications (Windows Forms, WPF, UWP)
+- Game development (Unity Engine)
+- Mobile applications (Xamarin)
+- Cloud computing and enterprise software
+
+# **1. Basics of C#**
+## **Hello World Program**
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+```
+### **Explanation:**
+- `using System;` – Imports the System namespace.
+- `Main()` – The entry point of a C# application.
+- `Console.WriteLine()` – Prints output to the console.
+
+## **Variables & Data Types**
+C# is a strongly typed language, meaning variables must have a defined type.
+```csharp
+int age = 25;      // Integer type
+float height = 5.9f; // Floating-point number
+char grade = 'A';  // Character
+bool isAdult = true; // Boolean
+string name = "John"; // String
+```
+
+# **2. Operators in C#**
+C# supports various operators, such as:
+- **Arithmetic:** `+`, `-`, `*`, `/`, `%`
+- **Comparison:** `==`, `!=`, `>`, `<`, `>=`, `<=`
+- **Logical:** `&&`, `||`, `!`
+- **Assignment:** `=`, `+=`, `-=`, `*=`, `/=`
+
+Example:
+```csharp
+int a = 10, b = 5;
+Console.WriteLine(a + b); // Output: 15
+```
+
+# **3. Control Flow Statements**
+## **Conditional Statements**
+```csharp
+int num = 10;
+if (num > 0)
+    Console.WriteLine("Positive number");
+else
+    Console.WriteLine("Negative number");
+```
+
+## **Loops**
+### **For Loop:**
+```csharp
+for (int i = 1; i <= 5; i++)
+{
+    Console.WriteLine("Iteration " + i);
+}
+```
+
+### **While Loop:**
+```csharp
+int x = 1;
+while (x <= 5)
+{
+    Console.WriteLine("Count: " + x);
+    x++;
+}
+```
+
+# **4. Functions & Methods**
+Functions in C# allow code reuse and modular programming.
+```csharp
+static int Add(int a, int b)
+{
+    return a + b;
+}
+
+static void Main()
+{
+    Console.WriteLine(Add(3, 4)); // Output: 7
+}
+```
+
+# **5. Object-Oriented Programming (OOP) in C#**
+C# is an object-oriented language, meaning it follows the principles of **Encapsulation, Inheritance, Polymorphism, and Abstraction**.
+
+## **Classes & Objects**
+```csharp
+class Car
+{
+    public string brand;
+    public void ShowBrand()
+    {
+        Console.WriteLine("Car brand: " + brand);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Car myCar = new Car();
+        myCar.brand = "Tesla";
+        myCar.ShowBrand(); // Output: Car brand: Tesla
+    }
+}
+```
+
+## **Encapsulation (Using Properties)**
+```csharp
+class Person
+{
+    private string name;
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+}
+```
+
+## **Inheritance**
+```csharp
+class Animal
+{
+    public void Speak()
+    {
+        Console.WriteLine("Animal speaks");
+    }
+}
+
+class Dog : Animal
+{
+    public void Bark()
+    {
+        Console.WriteLine("Dog barks");
+    }
+}
+```
+
+## **Polymorphism**
+```csharp
+class Animal
+{
+    public virtual void MakeSound()
+    {
+        Console.WriteLine("Animal sound");
+    }
+}
+
+class Dog : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Bark");
+    }
+}
+```
+
+# **6. Exception Handling**
+Handling runtime errors using try-catch blocks.
+```csharp
+try
+{
+    int num = int.Parse("ABC"); // This will cause an error
+}
+catch (FormatException e)
+{
+    Console.WriteLine("Invalid format: " + e.Message);
+}
+```
+
+# **7. File Handling**
+Reading and writing files using `System.IO` namespace.
+```csharp
+using System.IO;
+
+File.WriteAllText("test.txt", "Hello C#");
+string content = File.ReadAllText("test.txt");
+Console.WriteLine(content);
+```
+
+# **8. Useful C# Libraries & Frameworks**
+- **ASP.NET Core** – Web development
+- **Entity Framework** – Database management
+- **Unity** – Game development
+- **Xamarin** – Mobile applications
+
+# **9. Real-World Use Cases of C#**
+| Use Case | Description |
+|----------|-------------|
+| **Web Apps** | Building dynamic websites using ASP.NET Core |
+| **Game Development** | Used in Unity for 2D/3D games |
+| **Enterprise Software** | Developing CRM, ERP, and internal tools |
+| **Desktop Apps** | Creating Windows applications with WPF and WinForms |
+| **Mobile Apps** | Cross-platform apps with Xamarin |
+
+# **10. Learning Resources**
+- **Microsoft Docs:** https://docs.microsoft.com/en-us/dotnet/csharp/
+- **C# Tutorials:** https://www.tutorialspoint.com/csharp/index.htm
+- **C# Interactive Learning:** https://www.learn-csharp.net/
+
+---
+
+**End of Guide**
+
